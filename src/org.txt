@@ -1,0 +1,11 @@
+src/
+├── assets/            → imagens, fontes, estilos (ex: styles.css)
+├── components/        → componentes reutilizáveis (ex: Button.vue, Card.vue)
+├── layouts/           → layouts de página (ex: DefaultLayout.vue)
+├── pages/             → páginas do app (ex: Home.vue, About.vue)
+├── router/            → configuração do Vue Router (ex: index.ts)
+├── store/             → se usar Pinia ou Vuex (ex: index.ts)
+├── types/             → arquivos .d.ts ou interfaces globais
+├── utils/             → funções auxiliares (ex: formatDate.ts)
+├── App.vue            → componente raiz
+└── main.ts            → entrada do app
