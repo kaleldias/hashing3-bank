@@ -1,9 +1,10 @@
 export interface CampoFormulario {
   tipo: 'text' | 'number' | 'checkbox' | 'select'
-  label: string
-  chave: string
-  placeholder?: string
   id?: string
+  chave: string
+  label: string
+  placeholder?: string
+  initialValue?: any
   disabled?: boolean
   required?: boolean
   options?: {

@@ -24,7 +24,7 @@ const model = defineModel<number>()
 defineProps<
   Pick<
     CampoFormulario,
-    'label' | 'id' | 'placeholder' | 'required' | 'disabled'
+    'label' | 'id' | 'placeholder' | 'required' | 'disabled' | 'initialValue'
   > & {
     modelValue?: number
     id?: string

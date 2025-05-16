@@ -67,7 +67,13 @@ props.campos.forEach((campo) => {
   //Verifica se o campo já NÃO existe no objeto reativo form.
   //Isso evita sobrescrever valores já preenchidos (ex: se o valor inicial veio do pai ou já foi alterado pelo usuário).
   if (!(campo.chave in form)) {
-    form[campo.chave] = campo.tipo === 'checkbox' ? false : ''
+    if('initialValue' in campo){
+      form[campo.chave] = campo.initialValue
+    }
+    else{
+      form[campo.chave] = campo.tipo === 'checkbox' ? false : '';
+    }
+    
   }
 })
 
