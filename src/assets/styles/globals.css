@@ -22,7 +22,7 @@
 
 @layer components {
   .cards {
-    @apply  flex w-full flex-col items-start gap-4 self-stretch rounded-xl bg-white p-6 shadow-lg md:max-w-[700px];
+    @apply flex w-full flex-col items-start gap-4 self-stretch rounded-xl bg-white p-6 shadow-lg md:max-w-[700px];
   }
 
   .titulo-cards {
