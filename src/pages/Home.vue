@@ -37,48 +37,6 @@ import Form from '../components/forms/Form.vue'
           <ActionButton icon="solar:document-bold">Gerar Extrato</ActionButton>
         </CardSection>
       </div>
-
-      <Form
-        :campos="[
-          {
-            tipo: 'number',
-            label: 'Valor (R$)  ',
-            chave: 'Valor do Depósito',
-            required: true,
-            id: 'valor'
-          },
-          {
-            tipo: 'text',
-            label: 'Descrição (opcional)',
-            chave: 'Descrição do Depósito',
-            required: true,
-            id: 'nome',
-            disabled: false
-          },
-          {
-            tipo: 'checkbox',
-            label: 'Conta Especial',
-            id: 'especial',
-            chave: 'Define conta Especial ou não'
-          },
-          {
-            tipo: 'select',
-            id: 'selecionar-conta',
-            chave: 'Seleciona uma conta para transferencia',
-            label: 'Conta Destino',
-            placeholder: 'Selecione a conta destino',
-            options: [
-              {
-                value: 'semconta',
-                label: 'Nenhuma conta disponivel',
-                disabled: true,
-                selected: true
-              }
-            ]
-          }
-        ]"
-      >
-      </Form>
     </section>
   </DefaultLayout>
 </template>
